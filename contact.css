@@ -1,0 +1,107 @@
+.home-section {
+       height: 70vh;
+       background-image: url('img/33.jpg');
+       background-size: cover;
+       background-position: center;
+       background-attachment: fixed;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       text-align: center;
+   }
+
+   .home-section h1 {
+       color: #fff;
+       font-size: 3rem;
+       text-transform: uppercase;
+       font-weight: 200;
+   }
+
+   .contact-section {
+       display: flex;
+       justify-content: space-between;
+       padding: 50px;
+       text-align: center;
+
+
+   }
+
+   .contact-form {
+       text-align: left;
+       width: 40%;
+       text-transform: uppercase;
+   }
+   .contact-form form {
+       text-transform: uppercase;
+   }
+
+   .contact-form input,
+   .contact-form select,
+   .contact-form textarea {
+       width: 100%;
+       padding: 10px;
+       margin-bottom: 20px;
+        border: 0.3px solid #ccc;
+        resize: none;
+        margin-bottom: 30px;
+        font-size: 1.3rem;
+        font-weight: 100;
+   }
+
+   .contact-form button {
+       padding: 10px 20px;
+       background-color: #008083;
+       color: #fff;
+       border: none;
+       cursor: pointer;
+       font-weight: 100;
+       font-size: 1.5rem;
+       text-transform: uppercase;
+   }
+   .contact-form button:hover{
+     background-color: #fd5901;
+   }
+
+   .contact-info {
+     padding-top: 50px;
+       width: 50%;
+       text-align: center;
+   }
+.contact-info h5{
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+  text-align: left;
+  text-transform: uppercase;
+}
+.contact-info h2{
+  font-size: 4rem;
+  font-weight: 500;
+  text-align: left;
+}
+.contact-info p{
+  font-size: 1.5rem;
+  font-weight: 100;
+  text-align: left;
+}
+
+@media (max-width: 1100px) {
+  .home-section {
+    height: 50vh;
+  }
+  .home-section h1{
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 200;
+  }
+    .contact-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-form,
+    .contact-info {
+        width: 100%;
+    }
+}

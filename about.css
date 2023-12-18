@@ -1,0 +1,250 @@
+
+
+
+.home-section {
+  background-image: url("img/8.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-section h1{
+  text-transform: uppercase;
+  font-weight: 200;
+}
+.about-us {
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  padding: 20px;
+
+}
+/*zigzag*/
+.about-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 100px;
+}
+
+.image {
+  flex: 1 1 50%;
+  animation: fade-in 1s ease-out forwards;
+  display: flex; /* Add this line */
+  justify-content: center; /* Add this line */
+  align-items: center;
+}
+
+.image img {
+  max-width: 60%;
+  height: auto;
+}
+
+.content {
+  flex: 1 1 50%;
+  padding: 20px;
+  animation: fade-in 1s ease-out forwards;
+}
+.content h2{
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 200;
+}
+.content h5{
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+.content p{
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+.content p i{
+  color: #008083;
+  font-size: 1.5rem;
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1100px) {
+  .image, .content {
+    flex: 1 1 100%;
+  }
+}
+/*box section*/
+.box-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 50px;
+  display: flex; /* Add this line */
+  justify-content: center; /* Add this line */
+  align-items: center;
+
+}
+.box img{
+  max-width: 20%;
+}
+#box1{
+  background-color: #008083;
+}
+#box2{
+  background-color: #FD5901;
+}
+.box {
+  flex: 1;
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  height: 80vh;
+}
+.box h2{
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+.box p{
+  color: #fff;
+  font-size: 1.2rem;
+}
+.box:first-child {
+  border-right: none;
+}
+
+@media (max-width: 1100px) {
+  .box {
+    flex-basis: 100%;
+    height: 80vh;
+  }
+}
+/*team*/
+.team-section {
+  text-align: center;
+}
+
+.team-member {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.team-section h2{
+  font-weight: 200;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.team-member p {
+  margin-bottom: 10px;
+  font-weight: 100;
+}
+
+.team-members {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.team-members.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/*info*/
+.information{
+  height: 40vh;
+}
+.information h5{
+  text-align: left;
+  font-size: 1.8rem;
+  font-weight: 200;
+}
+.information h1{
+  text-align: center;
+  font-size: 2.3rem;
+  font-weight: 100;
+}
+.information p{
+  font-weight: 100;
+}
+@media (max-width: 1100px){
+  .information p{
+    font-size: 1rem;
+  }
+  .information{
+    width: 90%;
+  }
+}
+/*us*/
+.Us {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.part {
+  flex: 1;
+  padding: 20px;
+  background-color: #f2f2f2;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  display: flex; /* Add this line */
+  justify-content: center; /* Add this line */
+  align-items: center;
+}
+.part img{
+  max-width: 50%;
+}
+#small img{
+  max-width: 75%;
+}
+.part h5{
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+@media screen and (max-width: 1100px) {
+  .part {
+    flex-basis: 100%;
+    margin-right: 0;
+  }
+  .part h5{
+    font-size: 1rem;
+  }
+}
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 70px;
+  background-color: #008083;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20%;
+  opacity: 0;
+  font-size: 3rem;
+  font-weight: 200;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+.back-to-top:hover{
+  background-color: #FD5901;
+}
+.back-to-top.active {
+  opacity: 1;
+  visibility: visible;
+}

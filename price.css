@@ -1,0 +1,98 @@
+
+.price {
+            display: inline-block;
+            width: 30%;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            text-align: center;
+            box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.2);
+          }
+          .price h2{
+            text-align: center;
+            font-size: 2.3rem;
+            font-weight: 200;
+          }
+          @media (max-width: 1100px) {
+            .price {
+              display: block;
+              width: calc(100% - 30px); /* Subtracting the margin from the width */
+            }
+          }
+.price:hover{
+  background-color: #FD5901;
+}
+          .price li {
+            margin-bottom: 10px;
+          }
+          .price ul{
+            list-style-type: none;
+            padding: 0;
+            font-weight: 300;
+            font-size: 2rem;
+          }
+
+          .price p{
+            font-size: 4rem;
+            color: #008083;
+            font-weight: 100;
+          }
+          .price h5{
+            font-size: 2rem;
+            text-transform: capitalize;
+            text-align: left;
+            color: #008083;
+            font-weight: 300;
+          }
+/*borehole*/
+.borehole-block {
+            display: inline-block;
+            width: 30%;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            text-align: center;
+            box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.2);
+
+      }
+          @media (max-width: 1100px) {
+            .borehole-block {
+              display: block;
+              width: calc(100% - 30px); /* Subtracting the margin from the width */
+            }
+            .borehole-block li{
+              font-size: 1.4rem;
+
+            }
+          }
+          @media (max-width: 300px){
+            .borehole-block li{
+              font-size: 0.8rem;
+
+            }
+          }
+         h2{
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 2rem;
+            font-weight: 200;
+          }
+          .borehole-block ul{
+            list-style-type: none;
+          }
+          .borehole-block li{
+            font-size: 1.8rem;
+            font-weight: 200;
+            margin-bottom: 20px;
+
+          }
+          .borehole-block li span{
+            float: right;
+            color: #008083;
+          }
+          .borehole-block h2{
+            text-align: center;
+            font-weight: 3.4rem;
+            font-weight: 100;
+            text-transform: uppercase;
+          }
